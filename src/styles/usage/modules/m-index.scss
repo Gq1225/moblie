@@ -1,0 +1,192 @@
+@font-face{
+   font-family:yofont; 
+    src: url("http://guoqian.com/couse-layout1/style/iconfont/iconfont.woff") format("woff"),url("http://guoqian.com/couse-layout1/style/iconfont/iconfont.ttf") format("truetype");
+   
+}
+@font-face{
+   font-family:yofont; 
+    src: url("http://guoqian.com/couse-layout1/style/iconfont1/iconfont1.woff") format("woff"),url("http://guoqian.com/couse-layout1/style/iconfont1/iconfont1.ttf") format("truetype");
+   
+}
+
+
+body {
+  @include flexbox(flex);
+  @include flex-direction(column);
+  header {
+       @include flexbox(flex);
+      flex-direction:row;
+    width: 100%;
+    height: .44rem;
+    background: #f9f9f9;
+  
+        .a1{
+           font-family:yofont;
+           font-size:.18rem;
+           color: #0581f5;
+           line-height: .44rem;
+           font-weight: bolder;
+        }
+        .p1{
+            font-family:yofont;
+             font-size:.18rem;
+           color: #000;
+           line-height: .44rem;
+           font-weight: bolder;
+           text-align: center;
+           @include flex(1); 
+        }
+    
+  }
+  nav {
+    width: 100%;
+    height: .4rem;
+    background: #f9f9f9;
+    @include flexbox(flex);
+    @include flex-direction(row);
+    @include justify-content(center);
+    @include align-items(center);
+    @include border(0 0 1px 0,#e7e7e7)
+      .box{height:0.28rem;width:2.87rem;
+           @include border(1px,#0581f5,solid,.05rem)
+             @include flexbox(flex);
+            @include flex-direction(row);
+            @include justify-content(center);
+            @include align-items(center);
+            div{
+                 color: #027ffd;
+        font-family:yofont ;
+        font-size: .12rem;
+        line-height: .28rem;
+        font-weight: bolder;
+        text-align: center;
+         @include flexbox(flex);
+         @include flex-direction(row);
+         @include justify-content(center);
+         @include align-items(center);
+            }
+            
+            .a2{
+       @include flex(1);
+       text-align: center;
+//      @include border(0 1px 0 0,#0581f5);
+        background-color:#0581f5 ;
+        color: #fff;
+        border-bottom-left-radius: .05rem;
+        border-top-left-radius: .05rem;
+    }
+    .a3{
+        @include flex(1);
+        text-align: center; 
+        @include border(0 1px 0 1px,#0581f5) 
+    }
+    .a4{
+      @include flex(1);
+      text-align: center;   
+    }
+     }
+//  a{
+//      color: #027ffd;
+//      font-family:yofont ;
+//      font-size: .16rem;
+//      line-height: .4rem;
+//      text-align: center;
+//       @include flexbox(flex);
+//       @include flex-direction(row);
+//       @include justify-content(center);
+//       @include align-items(center);
+//  }
+    
+  }
+  
+  
+  
+  section {
+   
+    @include flex(1);
+     width: 100%;
+    @include flexbox(flex);
+    @include flex-direction(column);
+    overflow: hidden;
+    position: relative;
+//  background:yellow;
+    .sec{
+        width: 100%;height:.9rem;
+        @include flexbox(flex);
+         @include flex-direction(row);
+         margin-left: .1rem;
+         @include box-sizing(border-box);
+         @include border(0 0 1px 0,#e7e7e7);
+         @include align-items();
+         padding-right: .10rem;
+         .sec1{
+             img{width: .62rem;height: .63rem;}
+             padding-right:.10rem
+             
+         }
+         .sec2{
+             @include flex(1);
+             @include flex-direction(column);
+             .n1{font-size: .12rem;font-weight: bolder;}
+             .n2{font-size: .11rem;color: #dadada;}
+             .n3{ font-family:yofont;
+             color:#ff9a1d;}
+         }
+         .sec3{
+             @include border(1px,#027ffd,solid,.05rem);
+             margin-right: .10rem;
+             position: relative;
+             padding: .06rem .09rem;
+             color: #027ffd;
+             font-size: .12rem;
+             .s1{font-family:yofont;
+             position: absolute;top:5px;left:-1px;
+             color:#027ffd ;
+             font-size: .09rem;
+             line-height: 0;
+             }
+              
+              
+
+
+         }
+    }
+    
+  }
+  
+  
+  
+  footer {
+    width: 100%;
+    height: 0.5rem;
+    background: #f8f8f8;
+    @include flexbox(flex);
+    flex-direction:row;
+    p{
+        font-family:yofont;
+        font-size:.18rem;
+        @include flexbox(flex);
+     flex-direction:column;
+      @include flex(1);
+      text-align: center;
+      font-size: 0.21rem;
+            span{
+               font-family:yofont;
+             font-size:.09rem; 
+             
+            }
+        }
+         .p2{
+        color:#007aff;
+        span{
+           color:#007aff;
+           transform: scale(0.3); 
+        }
+    }
+
+        
+    
+  
+  }
+}
+
